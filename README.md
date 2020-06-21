@@ -58,3 +58,5 @@ $ cd AQ
 $ ./AQ --self
 ```  
 + Please refer to the [AQ's readme](https://github.com/ymgaq/AQ) for more information on onptions and launch modes.
+# 4. License  
+[MIT](https://github.com/GrahamML/docker_for_AQ/blob/master/LICENSE)
