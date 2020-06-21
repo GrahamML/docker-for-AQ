@@ -1,5 +1,5 @@
 # docker_for_AQ
-This repository provides a dockerfile for building a runtime environment for [GLOBIS-AQ](https://github.com/ymgaq/AQ) (AQ v4.0.0).
+This repository provides a dockerfile for building a runtime environment for [GLOBIS-AQZ](https://github.com/ymgaq/AQ) (AQ v4.0.0).
 
 >GLOBIS-AQZ is a joint project developed by GLOBIS Corporation, Mr. Yu Yamaguchi, and Tripleize Co., Ltd., provided by the National Institute of Advanced Industrial Science and Technology (AIST), and cooperated by the Nihon Ki-in. This program uses the result of GLOBIS-AQZ.
 
