@@ -57,6 +57,6 @@ Launch the AQ in this container.  The following is an example of launching in se
 $ cd AQ
 $ ./AQ --self
 ```  
-+ Please refer to the [AQ's readme](https://github.com/ymgaq/AQ) for more information on onptions and launch modes.
++ Refer to the [AQ's readme](https://github.com/ymgaq/AQ) for more information on onptions and launch modes.
 # 4. License  
 [MIT](https://github.com/GrahamML/docker_for_AQ/blob/master/LICENSE)
