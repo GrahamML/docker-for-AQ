@@ -11,7 +11,7 @@ The following are additions or limitations to the requirements of AQ.
 + CUDA Toollit 10.2
 
 # 2. Installation
-## 2.1 Downloads
+## 2.1. Downloads
 Download the following file:
 + AQ v4.0.0 release pacakge for linux.  
 [AQ_linux.tar.gz](https://github.com/ymgaq/AQ/releases/download/v4.0.0/AQ_linux.tar.gz)
@@ -20,7 +20,7 @@ Then clone this repository:
 ```console
 $ git clone https://github.com/GrahamML/docker_for_AQ.git
 ```
-## 2.2 Build the docker image
+## 2.2. Build the docker image
 Copy the downloaded package to your local repository and build:  
 
 ```console
@@ -35,12 +35,12 @@ $ docker build --tag=[image_name:tag] . --build-arg RT=20.03
     ```
 + The following shows the version of Ubuntu, CUDA, and TensorRT in this container. 
 
-    | Ubuntu | CUDA Toolkit        | TensorRT       |
-    |--------|---------------------|----------------|
-    | 18.04  | NVIDIA CUDA 10.2.89 | TensorRT 7.0.0 |
+    | Ubuntu | CUDA Toolkit  | cuDNN    | TensorRT     |
+    |--------|---------------|----------|--------------|
+    | 18.04  | 10.2.89       | 7.6.5.32 | 7.0.0        |
 
 # 3. How to run
-## 3.1 Start the docker image
+## 3.1. Start the docker image
 Start the docker image as follows:  
 ```console
 $ docker run \
@@ -51,7 +51,7 @@ $ docker run \
     --name [container_name] \
     [image_name:tag]
 ```  
-## 3.2 Launch the AQ
+## 3.2. Launch the AQ
 Launch the AQ in this container.  The following is an example of launching in self-play mode:
 ```console
 $ cd AQ
