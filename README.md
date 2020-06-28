@@ -90,5 +90,11 @@ total games=162, evaluated =161
  :
 ```  
 + Refer to the [AQ's readme](https://github.com/ymgaq/AQ) for more information on onptions and launch modes.
-# 4. License  
+
+# 4. Communitacion with Lizzie  
+See this [wiki](https://github.com/GrahamML/docker_for_AQ/wiki/Communitacion-with-Lizzie).  
+
+![Select](https://github.com/GrahamML/docker_for_AQ/wiki/images/Communitacion-with-Lizzie/Fig8.png)
+
+# 5. License  
 [MIT](https://github.com/GrahamML/docker_for_AQ/blob/master/LICENSE)
