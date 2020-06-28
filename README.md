@@ -28,7 +28,8 @@ $ cd ./docker_for_AQ/dockerfile
 $ cp ~/Downloads/AQ_linux.tar.gz .
 $ docker build --tag=[image_name:tag] . --build-arg RT=20.03
 ```  
-+ This dockerfile install the downloaded packages on the [NVIDIA TensorRT official docker image](https://docs.nvidia.com/deeplearning/tensorrt/container-release-notes/running.html#running), and make the AQ runtime.
++ This dockerfile install the downloaded packages on the [NVIDIA TensorRT official docker image](https://docs.nvidia.com/deeplearning/tensorrt/container-release-notes/running.html#running), and make the AQ runtime.  
++ If you are not in the docker group, you will need to change the `docker` command to `sudo docker`.
 + The following is an example of a build command. The `--build-arg` option can be omitted.  
     ```
     $ docker build --tag=aq:4.0.0 . 
