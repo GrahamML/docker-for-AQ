@@ -1,4 +1,4 @@
-# docker_for_AQ
+# docker-for-AQ
 This repository provides a dockerfile for building a runtime environment for [GLOBIS-AQZ](https://github.com/ymgaq/AQ) (AQ v4.0.0).
 
 >GLOBIS-AQZ is a joint project developed by GLOBIS Corporation, Mr. Yu Yamaguchi, and Tripleize Co., Ltd., provided by the National Institute of Advanced Industrial Science and Technology (AIST), and cooperated by the Nihon Ki-in. This program uses the result of GLOBIS-AQZ.
@@ -18,13 +18,13 @@ Download the following file:
 
 Then clone this repository:  
 ```console
-$ git clone https://github.com/GrahamML/docker_for_AQ.git
+$ git clone https://github.com/GrahamML/docker-for-AQ.git
 ```
 ## 2.2. Build the docker image
 Copy the downloaded package to your local repository and build:  
 
 ```console
-$ cd ./docker_for_AQ/dockerfile
+$ cd ./docker-for-AQ/dockerfile
 $ cp ~/Downloads/AQ_linux.tar.gz .
 $ docker build --tag=[image_name:tag] . --build-arg RT=20.03
 ```  
