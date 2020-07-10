@@ -6,9 +6,10 @@ This repository provides a dockerfile for building a runtime environment for [GL
 # 1. Prerequisites  
 The following are additions or limitations to the requirements of AQ. 
 + Linux x86_64
-+ Docker or Docker-CE
-+ nvidia-docker >= 2.0
-+ CUDA Toollit 10.2
++ Docker
++ nvidia-docker2 (Docker >= 1.12) or nvidia-container-toolkit (Docker >= 19.03)  
+
+_Learn more about how to install [docker](https://github.com/Microsoft/MMdnn/blob/master/docs/InstallDockerCE.md) and [nvidia-container-toolkit](https://github.com/NVIDIA/nvidia-docker#quickstart)_
 
 # 2. Installation
 ## 2.1. Downloads
@@ -52,6 +53,7 @@ $ docker run \
     --name [container_name] \
     [image_name:tag]
 ```  
++ The example above is for `nvidia-docker2` case. If it's `nvidia-container-toolkit` case, change it appropriately. 
 ## 3.2. Launch the AQ
 Launch the AQ in this container.  The following is an example of launching in self-play mode:
 ```console
