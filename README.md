@@ -36,7 +36,7 @@ $ docker build --tag=[image_name:tag] . --build-arg RT=20.03
     ```
     $ docker build --tag=aq:4.0.0 . 
     ```
-+ The following shows the version of Ubuntu, CUDA, and TensorRT in this container. 
++ The following shows the version of Ubuntu, CUDA, cuDNN and TensorRT in this container. 
 
     | Ubuntu | CUDA Toolkit  | cuDNN    | TensorRT     |
     |--------|---------------|----------|--------------|
