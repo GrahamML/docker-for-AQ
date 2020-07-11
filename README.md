@@ -1,7 +1,9 @@
 # docker-for-AQ
 This repository provides a dockerfile for building a runtime environment for [GLOBIS-AQZ](https://github.com/ymgaq/AQ) (AQ v4.0.0).
 
->GLOBIS-AQZ is a joint project developed by GLOBIS Corporation, Mr. Yu Yamaguchi, and Tripleize Co., Ltd., provided by the National Institute of Advanced Industrial Science and Technology (AIST), and cooperated by the Nihon Ki-in. This program uses the result of GLOBIS-AQZ.
+>GLOBIS-AQZ is a joint project developed by GLOBIS Corporation, Mr. Yu Yamaguchi, and Tripleize Co., Ltd., provided by the National Institute of Advanced Industrial Science and Technology (AIST), and cooperated by the Nihon Ki-in. This program uses the result of GLOBIS-AQZ.  
+
+_日本語の説明は[こちら](https://github.com/GrahamML/docker-for-AQ/blob/master/README_JP.md)を参照ください。_  
 
 # 1. Prerequisites  
 The following are additions or limitations to the requirements of AQ. 
