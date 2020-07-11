@@ -1,10 +1,12 @@
 # docker-for-AQ
 [GLOBIS-AQZ](https://github.com/ymgaq/AQ) (AQ v4.0.0)の実行環境を構築するためのdockerfileを提供します。
 
->GLOBIS-AQZは、開発：株式会社グロービス、山口祐氏、株式会社トリプルアイズ、開発環境の提供：国立研究開発法人 産業技術総合研究所、協力：公益財団法人日本棋院のメンバーによって取り組んでいる共同プロジェクトです。このプログラムは、GLOBIS-AQZでの試算を活用しています。
+>GLOBIS-AQZは、開発：株式会社グロービス、山口祐氏、株式会社トリプルアイズ、開発環境の提供：国立研究開発法人 産業技術総合研究所、協力：公益財団法人日本棋院のメンバーによって取り組んでいる共同プロジェクトです。このプログラムは、GLOBIS-AQZでの試算を活用しています。  
+
+_Click [here](https://github.com/GrahamML/docker-for-AQ/blob/master/README.md) for the README in English._
 
 # 1. 前提条件  
-AQの動作要件に対する追加・制約要件は以下の通りです。 
+AQの動作要件に対する追加、制約要件は以下の通りです。 
 + Linux x86_64
 + Docker
 + nvidia-docker2 (Docker >= 1.12) あるいは nvidia-container-toolkit (Docker >= 19.03)  
