@@ -36,7 +36,7 @@ $ docker build --tag=[image_name:tag] . --build-arg RT=20.03
     ```
     $ docker build --tag=aq:4.0.0 . 
     ```
-+ 生成されるコンテナ内のUbuntu, CUDA, and TensorRTのバージョンは以下です
++ 生成されるコンテナ内のUbuntu、CUDA、cuDNN、TensorRTのバージョンは以下です
 
     | Ubuntu | CUDA Toolkit  | cuDNN    | TensorRT     |
     |--------|---------------|----------|--------------|
