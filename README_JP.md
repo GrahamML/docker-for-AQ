@@ -99,5 +99,5 @@ total games=162, evaluated =161
 
 ![Select](https://github.com/GrahamML/docker_for_AQ/wiki/images/Communitacion-with-Lizzie/Fig8.png)
 
-# 5. License  
+# 5. ライセンス  
 [MIT](https://github.com/GrahamML/docker_for_AQ/blob/master/LICENSE)
