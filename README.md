@@ -13,9 +13,8 @@ _Learn more about how to install [docker](https://github.com/Microsoft/MMdnn/blo
 
 # 2. Installation
 ## 2.1. Downloads
-Download the following file:
-+ AQ v4.0.0 release pacakge for linux.  
-[AQ_linux.tar.gz](https://github.com/ymgaq/AQ/releases/download/v4.0.0/AQ_linux.tar.gz)
+Download the following AQ v4.0.0 package file from [Release](https://github.com/ymgaq/AQ/releases).  
++ AQ_linux.tar.gz
 
 Then clone this repository:  
 ```console
