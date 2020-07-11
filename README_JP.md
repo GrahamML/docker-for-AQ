@@ -94,7 +94,7 @@ total games=162, evaluated =161
    A  B  C  D  E  F  G  H  J  K  L  M  N  O  P  Q  R  S  T 
  :
 ```  
-+ オプションや起動モードの詳細は[AQ'のreadme](https://github.com/ymgaq/AQ)を参照ください
++ オプションや起動モードの詳細は[AQのreadme](https://github.com/ymgaq/AQ)を参照ください
 
 # 4. Lizzieとの連携  
 この[wiki](https://github.com/GrahamML/docker_for_AQ/wiki/Communitacion-with-Lizzie)を参照ください。  
