@@ -52,7 +52,8 @@ $ docker run \
     --name [container_name] \
     [image_name:tag]
 ```  
-+ The example above is for `nvidia-docker2` case. If it's `nvidia-container-toolkit` case, change it appropriately. 
++ The example above is for `nvidia-docker2` case. If it's `nvidia-container-toolkit` case, change it appropriately.  
+
 ## 3.2. Launch the AQ
 Launch the AQ in this container.  The following is an example of launching in self-play mode:
 ```console
