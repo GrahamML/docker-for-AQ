@@ -16,8 +16,8 @@ RUN apt-get -y update \
 # Set the working directory to /workspace
 WORKDIR /workspace
 
-# Copy the AQ archive into the container at /workspace
-COPY AQ_linux.tar.gz /workspace
+# Download the AQ release package
+RUN wget https://github.com/ymgaq/AQ/releases/download/v4.0.0/AQ_linux.tar.gz
 
 # Make AQ
 RUN tar xvfz AQ_linux.tar.gz \
