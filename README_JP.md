@@ -15,22 +15,16 @@ _[Docker](https://github.com/Microsoft/MMdnn/blob/master/docs/InstallDockerCE.md
 
 # 2. インストール方法
 ## 2.1. ダウンロード  
-以下のAQ v4.0.0 パッケージファイルを[Release](https://github.com/ymgaq/AQ/releases)からダウンロードしてください。
-+ AQ_linux.tar.gz  
-
-次に本リポジトリをクローンしてください。 
+本リポジトリをクローンしてください。 
 ```console
 $ git clone https://github.com/GrahamML/docker-for-AQ.git
 ```
 ## 2.2. Dockerイメージのビルド  
-ダウンロードしたファイルをローカルリポジトリへコピーし、ビルドしてください。
-
 ```console
 $ cd ./docker-for-AQ/dockerfile
-$ cp ~/Downloads/AQ_linux.tar.gz .
 $ docker build --tag=[image_name:tag] . --build-arg RT=20.03
 ```  
-+ このdockerfileは[NVIDIA TensorRT 公式dockerイメージ](https://docs.nvidia.com/deeplearning/tensorrt/container-release-notes/running.html#running)の上にAQのランタイムを生成します
++ このdockerfileは[NVIDIA TensorRT 公式dockerイメージ](https://docs.nvidia.com/deeplearning/tensorrt/container-release-notes/running.html#running)の上にAQのリリースパッケージをダウンロードし、ランタイムを生成します
 + Linuxアカウントがdockerグループに属していない場合は`docker`コマンドを`sudo docker`コマンドへ置き換えてください
 + 以下はビルドコマンドの一例です。 `--build-arg`オプションは省略可能です  
     ```
@@ -95,6 +89,10 @@ total games=162, evaluated =161
  :
 ```  
 + オプションや起動モードの詳細は[AQのreadme](https://github.com/ymgaq/AQ)を参照ください
++ AQのreadmeに記載されているように、最初の起動はエンジンの構築に数分かかります。 エンジンが`/workspace/AQ/engine`の下に生成された後、以下のようにコンテナを保存することを推奨します。そうすると2回目からは起動が速くなります。  
+    ```console
+    docker commit [container_ID] [image_name:tag]  
+    ```
 
 # 4. Lizzieとの連携  
 この[wiki](https://github.com/GrahamML/docker_for_AQ/wiki/Communitacion-with-Lizzie)を参照ください。  
