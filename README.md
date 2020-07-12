@@ -15,22 +15,16 @@ _Learn more about how to install [docker](https://github.com/Microsoft/MMdnn/blo
 
 # 2. Installation
 ## 2.1. Downloads
-Download the following AQ v4.0.0 package file from [Release](https://github.com/ymgaq/AQ/releases).  
-+ AQ_linux.tar.gz
-
-Then clone this repository:  
+Clone this repository:  
 ```console
 $ git clone https://github.com/GrahamML/docker-for-AQ.git
 ```
 ## 2.2. Build the docker image
-Copy the downloaded package to your local repository and build:  
-
 ```console
 $ cd ./docker-for-AQ/dockerfile
-$ cp ~/Downloads/AQ_linux.tar.gz .
 $ docker build --tag=[image_name:tag] . --build-arg RT=20.03
 ```  
-+ This dockerfile install the downloaded packages on the [NVIDIA TensorRT official docker image](https://docs.nvidia.com/deeplearning/tensorrt/container-release-notes/running.html#running), and make the AQ runtime.  
++ This dockerfile downloads the AQ release package on the [NVIDIA TensorRT official docker image](https://docs.nvidia.com/deeplearning/tensorrt/container-release-notes/running.html#running), and make runtime.  
 + If you are not in the docker group, you will need to change the `docker` command to `sudo docker`.
 + The following is an example of a build command. The `--build-arg` option can be omitted.  
     ```
@@ -94,7 +88,11 @@ total games=162, evaluated =161
    A  B  C  D  E  F  G  H  J  K  L  M  N  O  P  Q  R  S  T 
  :
 ```  
-+ Refer to the [AQ's readme](https://github.com/ymgaq/AQ) for more information on onptions and launch modes.
++ Refer to the [AQ's readme](https://github.com/ymgaq/AQ) for more information on onptions and launch modes.  
++ As mentioned in the AQ's README, the first launch will take a few minutes to build the engine. After the engine is built under `/workspace/AQ/engine`, it is recommended to save the current container as follows. Then it will start up faster from the second time.  
+    ```console
+    docker commit [container_ID] [image_name:tag]  
+    ```
 
 # 4. Communitacion with Lizzie  
 See this [wiki](https://github.com/GrahamML/docker_for_AQ/wiki/Communitacion-with-Lizzie).  
