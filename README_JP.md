@@ -91,7 +91,7 @@ total games=162, evaluated =161
 + オプションや起動モードの詳細は[AQのreadme](https://github.com/ymgaq/AQ)を参照ください
 + AQのreadmeに記載されているように、最初の起動はエンジンの構築に数分かかります。 エンジンが`/workspace/AQ/engine`の下に生成された後、以下のようにコンテナを保存することを推奨します。そうすると2回目からは起動が速くなります。  
     ```console
-    docker commit [container_ID] [image_name:tag]  
+    $ docker commit [container_ID] [image_name:tag]  
     ```
 
 # 4. Lizzieとの連携  
